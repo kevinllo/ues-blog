@@ -51,49 +51,66 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("./../assests/webteles.jpg");
+  background-image: url("./../assests/wheel.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.text h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.main {
+
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(15, 15, 15, 0.2);
+  margin-bottom: 60px;
+}
+.title {
+  padding: 10px;
+}
+.title h1 {
+  color: white;
+}
+.container-img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+ .container-img__back::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./../assests/wheel.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
 }
 
- .text h1 {
+p {
+  padding: 10px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  text-align:initial;
 }
-
-.main {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 60px;
-}
-.title h1 {
-  color: black;
-}
-
-.container-img{
-    width: 100%;
-    height: 600px;
-}
-img{
-   width: 100%;
-   height: 100%;
-}
-p{
-    padding: 10px;
-}
-::-webkit-scrollbar{
-    scroll-behavior: smooth;
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
 }
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
